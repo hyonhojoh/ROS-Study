@@ -120,11 +120,13 @@ ros::ServiceServer server = node_handle.advertiseService(
 + package에 srv폴더를 만들고, 그 안에 .srv 파일을 만들면 됨
 + ---으로 구분되고, 위가 request, 아래가 response
 
-```cpp
-req_msg_type req_msg_name
+```python
+# request definition
+msg_type msg_name
     ...
 ---
-resp_msg_type resp_msg_name
+# response definition
+msg_type msg_name
     ...
 ```
 
